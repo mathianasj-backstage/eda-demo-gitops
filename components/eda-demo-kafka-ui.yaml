@@ -22,7 +22,7 @@ spec:
               protocol: TCP
           env:
             - name: KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS
-              value: 'eda-demo-bootstrap:9092'
+              value: 'eda-demo-kafka-bootstrap:9092'
           resources: {}
           terminationMessagePath: /dev/termination-log
           terminationMessagePolicy: File
