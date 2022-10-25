@@ -7,3 +7,5 @@ spec:
   type: kafka-knative-broker
   owner: developers
   system: eda-demo
+  subcomponentOf: eda-demo-kafka
+  lifecycle: experimental
