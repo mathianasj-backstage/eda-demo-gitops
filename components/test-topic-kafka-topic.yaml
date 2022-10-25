@@ -4,7 +4,7 @@ metadata:
   name: test-topic
   namespace: eda-demo-dev
   labels:
-    strimzi.io/cluster: eda-demo-kafka
+    strimzi.io/cluster: eda-demo
 spec:
   partitions: 10
   replicas: 1
