@@ -1,0 +1,13 @@
+kind: KafkaTopic
+apiVersion: kafka.strimzi.io/v1beta2
+metadata:
+  name: test-topic
+  namespace: eda-demo-dev
+  labels:
+    strimzi.io/cluster: eda-demo-kafka
+spec:
+  partitions: 10
+  replicas: 1
+  config:
+    retention.ms: 604800000
+    segment.bytes: 1073741824

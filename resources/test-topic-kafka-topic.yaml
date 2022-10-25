@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: test-topic-kafka-topic
+  description: kafka topic
+spec:
+  type: kafka-topic
+  owner: developers
+  system: eda-demo
+  subcomponentOf: eda-demo-kafka
