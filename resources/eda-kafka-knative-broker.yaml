@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: eda-kafka-knative-broker
+  description: kafka knative broker
+spec:
+  type: kafka-knative-broker
+  owner: developers
+  system: eda-demo
+  subcomponentOf: eda-demo-kafka

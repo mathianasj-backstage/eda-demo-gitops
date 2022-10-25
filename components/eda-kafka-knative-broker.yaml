@@ -1,0 +1,13 @@
+kind: Broker
+apiVersion: eventing.kative.dev/v1
+metadata:
+  annotations:
+    eventing.knative.dev/broker.class: Kafka
+  name: eda
+  namespace: eda-demo-dev
+spec:
+  config:
+    apiVersion: v1
+    kind: ConfigMap
+    name: eda-demo-kafka-broker-config
+    namespace: eda-demo-dev
