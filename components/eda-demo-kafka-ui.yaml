@@ -39,3 +39,29 @@ spec:
       maxSurge: 25%
   revisionHistoryLimit: 10
   progressDeadlineSeconds: 600
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: eda-demo-kafka-ui
+  namespace: eda-demo-dev
+spec:
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
+  selector:
+    app: eda-demo-kafka-ui
+---
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: eda-demo-kafka-ui
+  namespace: eda-demo-dev
+spec:
+  to:
+    kind: Service
+    name: eda-demo-kafka-ui
+    weight: 100
+  port:
+    targetPort: 8080
