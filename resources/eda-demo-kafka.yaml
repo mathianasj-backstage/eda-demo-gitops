@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1beta2
+kind: Resource
+metadata:
+  name: eda-demo-kafka
+  description: kafka instance
+spec:
+  type: kafka
+  owner: developers
+  system: eda-demo
