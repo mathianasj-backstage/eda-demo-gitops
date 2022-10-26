@@ -19,6 +19,8 @@ spec:
         quarkus-run: 
           image:
             tag: dummy
+          appName: eda-demo
+          name: helloworld
   destination:
     server: https://kubernetes.default.svc
     namespace: eda-demo-dev
