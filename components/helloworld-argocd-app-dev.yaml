@@ -18,7 +18,7 @@ spec:
       values: |
         quarkus-run: 
           image:
-            tag:da912c6919d7bfba602fa13bb36bfdeeef5f9093
+            tag: da912c6919d7bfba602fa13bb36bfdeeef5f9093
           appName: eda-demo
           name: helloworld
   destination:
