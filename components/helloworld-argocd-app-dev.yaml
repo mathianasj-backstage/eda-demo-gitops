@@ -47,3 +47,5 @@ spec:
   - group: route.openshift.io
     kind: Route
     namespace: knative-serving-ingress
+    jsonPointers:
+    - /
