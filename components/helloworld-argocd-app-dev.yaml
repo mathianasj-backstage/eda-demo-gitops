@@ -44,6 +44,6 @@ spec:
     namespace: eda-demo-dev
     jsonPointers:
     - /spec/hosts
-  - group: route.openshift.io/v1
+  - group: route.openshift.io
     kind: Route
     namespace: knative-serving-ingress
