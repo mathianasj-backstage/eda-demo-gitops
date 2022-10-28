@@ -18,7 +18,7 @@ spec:
       values: |
         quarkus-run: 
           image:
-            tag: cacabce4adb1319cb9fc65a9d90694cf1bb7b615
+            tag: a8ba30be92034d931d2969b44aaca50570992a16
           appName: eda-demo
           name: eda-consumer
   destination:
